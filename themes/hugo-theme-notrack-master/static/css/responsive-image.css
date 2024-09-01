@@ -13,7 +13,7 @@
     max-width: 100%; /* Ensures the container does not exceed its parent's width */
 }
 
-@media (max-width: 768px) { /* Mobile-specific styling */
+@media (max-width: 100px) { /* Mobile-specific styling */
     .image-shortcode {
         float: none; /* Disables float on smaller screens to avoid layout issues */
         width: auto; /* Makes sure the width of the container is auto */
