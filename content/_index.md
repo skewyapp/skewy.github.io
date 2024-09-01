@@ -12,4 +12,4 @@ menu:
 
 Skewy is a project designed to prevent eavesdropping and ultrasonic tracking through your smartphone. The app is available on Android.
 
-{{<image float="center" width="20em" frame="false" caption="" src="img/skewy_combined.png" >}} 
+{{<image float="center" width="25em" frame="false" caption="" src="img/skewy_combined.png" >}} 

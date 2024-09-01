@@ -1,18 +1,15 @@
-<figure class="image-shortcode{{ with .Get "class" }} {{ . }}{{ end }}
-{{- with .Get "wide" }}{{- if eq . "true" }} wide{{ end -}}{{ end -}}
-{{- with .Get "frame" }}{{- if eq . "true" }} frame{{ end -}}{{ end -}}
-{{- with .Get "float" }} {{ . }}{{ end -}}"
+<figure class="responsive-image{{ with .Get "class" }} {{ . }}{{ end }}"
 style="
-{{- with .Get "width" }}width: {{ . }};{{ end -}}
+{{- with .Get "width" }}width: {{ . }};{{ else }}width: auto;{{ end -}}
 {{- with .Get "height" }}height: {{ . }};{{ end -}}">
 {{- if .Get "link" -}}
 <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
 {{- end }}
 <img src="{{ .Get "src" | relURL }}"
-{{- if or (.Get "alt") (.Get "caption") }}
-alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
-{{- end -}}
-/> <!-- Closing img tag -->
+alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify | plainify }}{{ end }}"
+class="responsive-image__img"
+style="max-width: 100%; height: auto;"
+/>
 {{- if .Get "link" }}</a>{{ end -}}
 {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
 <figcaption>

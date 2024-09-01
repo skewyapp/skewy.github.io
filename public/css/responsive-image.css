@@ -1,26 +1,30 @@
 /* responsive-image.css */
+
+/* Base styles for the responsive image */
 .responsive-image {
+    margin: 0;
+    padding: 0;
+    display: block; /* Ensures block display */
+    max-width: 100%; /* Container does not exceed parent width */
+    height: auto; /* Ensures height adjusts to width */
+}
+
+.responsive-image__img {
     display: block;
-    max-width: 100%; /* Ensures the image does not exceed its container's width */
+    max-width: 100%; /* Image does not exceed container width */
     height: auto; /* Maintains aspect ratio */
-    margin: 0; /* Removes any auto-centering */
 }
 
-/* Ensure the container aligns to the left */
-.image-shortcode { /* Use the correct class name */
-    float: left; /* Floats the container to the left */
-    margin: 0; /* Ensures no additional margin is applied */
-    max-width: 100%; /* Ensures the container does not exceed its parent's width */
-}
-
-@media (max-width: 100px) { /* Mobile-specific styling */
-    .image-shortcode {
-        float: none; /* Disables float on smaller screens to avoid layout issues */
-        width: auto; /* Makes sure the width of the container is auto */
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+    .responsive-image {
+        float: none; /* Removes float for mobile */
+        width: auto; /* Allows container to scale based on content */
+        max-width: 100%; /* Ensures container doesn't exceed parent width */
     }
 
-    .responsive-image {
-        max-width: 5%; /* Sets the image to occupy 50% of the container on smaller screens */
+    .responsive-image__img {
+        max-width: 50%; /* Adjusts image width to occupy less space on smaller screens */
         height: auto; /* Maintains aspect ratio */
     }
 }
