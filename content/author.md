@@ -14,7 +14,7 @@ I hope Skewy can give you peace of mind.
 
 If you would like to say thanks, you can send a cup of coffee. No refunds.
 
-{{< responsive-image src="img/pp-button.png" width="10%" link="https://www.paypal.com/donate/?hosted_button_id=GZ2SPFYWEAABQ" >}}
+{{< responsive-image src="img/pp-button.png" width="10%" frame="false"  link="https://www.paypal.com/donate/?hosted_button_id=GZ2SPFYWEAABQ" >}}
 
 
 {{<image float="center" width="25em" frame="false" caption="" src="img/skewy_gladiators.png" >}} 

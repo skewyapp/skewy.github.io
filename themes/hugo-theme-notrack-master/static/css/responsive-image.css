@@ -32,7 +32,7 @@
 /* Target even smaller screens */
 @media (max-width: 480px) {
     .responsive-image-img {
-        max-width: 50%; /* Further reduces image width on very small screens */
+        max-width: 80%; /* Further reduces image width on very small screens */
         height: auto; /* Maintains aspect ratio */
     }
 }
