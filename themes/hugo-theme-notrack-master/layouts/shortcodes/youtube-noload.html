@@ -1,0 +1,6 @@
+<div class="youtube-placeholder" style="background-image:url('https://img.youtube.com/vi/{{ .Get 0 }}/hqdefault.jpg');" onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+    <p style="color: rgb(204, 202, 202);">Click to load the YouTube video. Unfortunatley this activates YouTube's Third Party Cookies.</p>
+</div>
+  <div style="display:none;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ .Get 0 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>

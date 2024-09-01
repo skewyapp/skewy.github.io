@@ -1,0 +1,23 @@
+/* left-right-split-stlye.css */
+
+/* Flex container for text and PayPal button */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0; /* Ensure no margins are applied by default */
+  padding: 0; /* Ensure no padding is applied by default */
+  font-family: inherit; /* Inherit font styles if needed */
+  color: inherit; /* Inherit text color if needed */
+}
+  
+  /* Flex item that grows to fill space */
+  .flex-grow-1 {
+    flex-grow: 1;
+    color: inherit;
+  }
+  
+  /* Responsive image */
+  .paypal-button {
+    max-width: 150px;
+  }

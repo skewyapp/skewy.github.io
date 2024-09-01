@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Skewy - anti eavesdropping - FAQ </title>
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/css/fontawesome.css">
+    <link rel="stylesheet" href="http://localhost:1313//css/left-right-split-style.css">
+    <link rel="stylesheet" href="http://localhost:1313//css/mystyle.css">
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/styles.min.d1b3428734153d8c3b5e2f3598da20a6372f630ae87c763594b98c554c580343.css">
+    
+    
+    <link rel="icon" href="/img/PlayStoreIcon.png">
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="Skewy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+<header class="page-header">
+    <div class="header-container"> 
+        <img src="/img/PlayStoreIcon.png" alt="Logo" class="logo"/>
+        <h2><a href="http://localhost:1313/">Skewy - anti eavesdropping</a></h2> 
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li class="">
+                <a href="/">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="activetab">
+                <a href="/faq/">
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="/author/">
+                    <span>Author</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="/pp/">
+                    <span>Privacy policy</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div id="content">
+    <main>
+        <article>
+            
+            <h1 class="page-title">FAQ</h1>
+            
+            <link rel="stylesheet" href="/css/picture-style.css">
+                <p><em>Why do you not just use a &lsquo;block the microphone setting&rsquo;?</em></p>
+<p>Can we be sure this actually works? Software settings can be overwritten by the operating system.</p>
+<p><em>Can Skewy decipher ultrasonic signals (i.e. &lsquo;who sent the signal?&rsquo;)?</em></p>
+<p>To decipher a signal, the full signal would have to be recorded. In this case, the signal would have entered the device and would be read by the target, making the jamming obsolete.</p>
+<p><em>Is every detection a signal?</em></p>
+<p>No. For example, electronic equipment such as marten repellents for cars or induction cooktops can emit in the evaluated range of 17.8 to 20 kHz.</p>
+<p><em>Why 17.8 to 20 kHz?</em></p>
+<p>This range is based on technical literature for the ultrasonic signals in question. Most microphones and loudspeakers are developed for the audible range of 20 Hz to 20 kHz. Human hearing performance is low in the higher range, leaving 18 kHz to 20 kHz in the possible range while remaining inaudible. See Arp et al. (2016): Bat in the Mobile: A Study on Ultrasonic Device Tracking, chapter 3.1.</p>
+<p><em>Can I test the ultrasonic detection?</em></p>
+<p>Yes, an online tone generator can be used (for example, <a href="https://onlinetonegenerator.com/)">https://onlinetonegenerator.com/)</a>. More dedicated tests can be done with files from <a href="https://github.com/MAVProxyUser/SilverPushUnmasked">https://github.com/MAVProxyUser/SilverPushUnmasked</a>.</p>
+<p><em>How often is an ultrasonic jamming signal emitted?</em></p>
+<p>Once per alarm. It is not emitted when the alarm timer is counting down. The shortest possible interval is 15 seconds. The jamming signal lasts approximately 8 seconds.</p>
+<p><em>Which processing algorithm is used?</em></p>
+<p>The Goertzel algorithm. It was chosen over a Fast Fourier Transform (FFT) because it is more lightweight, minimizing the drain on resources (battery and processing). Skewy focuses on whether an ultrasonic frequency is present, not the exact nature of it (see the second question, &ldquo;who sent the signal?&rdquo;).</p>
+<p>References:</p>
+<p>Arp et al. 2017: Privacy Threats through Ultrasonic side Channels on Mobile Devices, TU Braunschweig. (<a href="https://www.sec.tu-bs.de/pubs/2017a-eurosp.pdf">https://www.sec.tu-bs.de/pubs/2017a-eurosp.pdf</a>)</p>
+<p><a href="https://en.wikipedia.org/wiki/SilverPush">https://en.wikipedia.org/wiki/SilverPush</a></p>
+<p><a href="https://techcrunch.com/2014/07/24/silverpush-audio-beacons/">https://techcrunch.com/2014/07/24/silverpush-audio-beacons/</a></p>
+<p><a href="https://www.comparitech.com/blog/information-security/block-ultrasonic-tracking-apps/">https://www.comparitech.com/blog/information-security/block-ultrasonic-tracking-apps/</a></p>
+<p><a href="https://github.com/MAVProxyUser/SilverPushUnmasked">https://github.com/MAVProxyUser/SilverPushUnmasked</a></p>
+<p><a href="https://arstechnica.com/tech-policy/2015/11/beware-of-ads-that-use-inaudible-sound-to-link-your-phone-tv-tablet-and-pc/">https://arstechnica.com/tech-policy/2015/11/beware-of-ads-that-use-inaudible-sound-to-link-your-phone-tv-tablet-and-pc/</a></p>
+
+            
+        </article>
+    </main>
+
+        </div><footer>
+    <span>Created with the &#39;No-track&#39; theme from gevhaz (GNU General Public License v3.0). This includes icons and other design elements from the theme. Original content - all rights reserved.</span>
+</footer>
+</body>
+</html>

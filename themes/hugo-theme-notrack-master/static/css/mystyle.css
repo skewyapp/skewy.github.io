@@ -1,0 +1,23 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100px; /* Adjust based on your preference */
+    width: 100px; /* Ensure width and height are the same for a perfect circle */
+    border-radius: 35%; /* This creates the circular effect */
+    object-fit: cover; /* Ensures the image covers the area without stretching. Useful if the image isn't perfectly square */
+    margin: 10px;
+}
+
+.header-container h2 {
+    margin: 0;  /* Removes default margin */
+    font-size: 50px;  /* Example font size, adjust as needed */
+}
+
+.header-container h2 a {
+    text-decoration: none;  /* Removes underline from links */
+    color: #333;  /* Example color, adjust as needed */
+}
