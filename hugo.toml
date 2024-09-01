@@ -1,4 +1,4 @@
-baseURL = 'https://skewyapp.github.io'
+baseURL = 'https://skewy.github.io'
 languageCode = 'en-us'
 title = 'Anti eavesdropping'
 theme = "hugo-theme-notrack-master"
