@@ -1,9 +1,9 @@
 /* responsive-image.css */
 .responsive-image {
     display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0; /* Remove auto centering to prevent it from being centered */
+    max-width: 100%; /* Ensures the image does not exceed its container's width */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0; /* Removes any auto-centering */
 }
 
 /* Ensure the container aligns to the left */

@@ -4,13 +4,17 @@
 {{- with .Get "float" }} {{ . }}{{ end -}} responsive-image"
 style="
 {{- with .Get "width" }}max-width: 100%; width: {{ . }};{{ else }}width: 100%;{{ end -}}
-{{- with .Get "height" }}height: {{ . }};{{ end -}}">
+{{- with .Get "height" }}height: {{ . }};{{ end -}};
+float: left; /* Ensure the container itself also floats left */
+margin: 0; /* Reset any margin that might center the element */
+">
 {{- if .Get "link" -}}
 <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
 {{- end }}
 <img src="{{ .Get "src" | relURL }}"
+class="responsive-image"
 {{- if or (.Get "alt") (.Get "caption") }}
-alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify | plainify }}{{ end }}"
 {{- end -}}
 style="max-width: 100%; height: auto;"
 /> <!-- Closing img tag -->
