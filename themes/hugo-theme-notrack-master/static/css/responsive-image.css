@@ -1,0 +1,21 @@
+/* responsive-image.css */
+.responsive-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0; /* Remove auto centering to prevent it from being centered */
+}
+
+/* Ensure the container aligns to the left */
+.image-shortcode { /* Use the correct class name */
+    float: left; /* Floats the container to the left */
+    margin: 0; /* Ensures no additional margin is applied */
+    max-width: 100%; /* Ensures the container does not exceed its parent's width */
+}
+
+@media (max-width: 768px) { /* Mobile-specific styling */
+    .responsive-image {
+        max-width: 80%; /* Limits the width to 80% of its container on smaller screens */
+        width: auto; /* Ensures the width auto adjusts */
+    }
+}

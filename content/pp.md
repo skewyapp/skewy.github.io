@@ -25,4 +25,4 @@ All data can be deleted in the Alarms tab by pressing individual entries. To del
 
 **Website:**
 
-No data collection, no trackers. This website uses the "no-track" theme from [gezhav](https://github.com/gevhaz/hugo-theme-notrack). 
+No data collection, no trackers. This website is created with the Hugo "no-track" theme from [gezhav](https://github.com/gevhaz/hugo-theme-notrack) (GNU General Public License v3.0). This includes icons and other design elements from the theme. Original content - all rights reserved.

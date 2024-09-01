@@ -17,7 +17,7 @@ paginate = 4
   showTaxonomyLinks = false
   nBlogLatest = 4 # number of blog post om the home page
   blogLatestHeading = "My writing"
-  footer = "Created with the 'No-track' theme from gevhaz (GNU General Public License v3.0). This includes icons and other design elements from the theme. Original content - all rights reserved."
+  footer = "Created with the 'No-track' theme from gevhaz."
   logosrc = "/img/PlayStoreIcon.png"
   
 

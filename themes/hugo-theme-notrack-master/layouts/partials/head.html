@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="{{ "css/fontawesome.css" | relURL }}">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/left-right-split-style.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/mystyle.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/responsive-image.css">
     {{ $options := dict "transpiler" "libsass" "targetPath" "css/styles.css" }}
     {{ $style := resources.Get "styles.scss" | toCSS $options | minify | fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}">
