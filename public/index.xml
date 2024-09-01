@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Anti eavesdropping</title>
-        <link>https://skewy.github.io/</link>
+        <link>https://skewyapp.github.io/</link>
         <description>Latest blog posts from Anti eavesdropping</description>
 
         
@@ -20,7 +20,7 @@
         
 
         
-        <atom:link href="https://skewy.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://skewyapp.github.io/index.xml" rel="self" type="application/rss+xml" />
         
 
         
