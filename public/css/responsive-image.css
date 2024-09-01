@@ -20,7 +20,7 @@
     }
 
     .responsive-image {
-        max-width: 50%; /* Sets the image to occupy 50% of the container on smaller screens */
+        max-width: 5%; /* Sets the image to occupy 50% of the container on smaller screens */
         height: auto; /* Maintains aspect ratio */
     }
 }
